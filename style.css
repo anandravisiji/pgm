@@ -1,0 +1,13 @@
+.error {
+  color:red;
+}
+
+
+
+#container {
+  border: 2px solid gray;
+  background-color: #99dddd;
+  width: 500px;
+  margin: 100px auto;
+  padding: 40px;
+}

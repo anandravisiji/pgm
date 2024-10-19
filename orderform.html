@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>Form Processing in PHP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+<h1>Electronics Order Page</h1>
+<form name="myForm" id="myForm" action="process.php" method="get">
+<br><br>
+<span id="name">Name: </span><input type="text" name="fullname"><br><br>
+
+<span id="device">Device: </span>
+<select name="device">
+<option value="0">Select a Device</option>
+<option value="phone">Phone</option>
+<option value="tablet">Tablet</option>
+<option value="laptop">Laptop</option>
+</select><br><br>
+
+<span id="color">Color:</span> <input type="radio" name="color" value="silver"> Silver
+<input type="radio" name="color" value="Black"> Black
+<input type="radio" name="color" value="White" checked> White <br><br>
+
+<span id="extra">Accessories:</span> 
+<input type="checkbox" name="extras[]" value="Charger" checked> charger
+<input type="checkbox" name="extras[]" value="Cover" checked> Cover
+<input type="checkbox" name="extras[]" value="Headphones" checked> Headphones <br><br>
+
+<input type="submit" name="submitBtn">
+<input type="reset" name="resetBtn">
+</form>
+</div>
+</body>
+</html>
